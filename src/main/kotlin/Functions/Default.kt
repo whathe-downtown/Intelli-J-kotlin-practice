@@ -8,7 +8,7 @@ fun printMutiplyMessage(message: String, prefix: String){
     println("$message $prefix")
 }
 
-fun sum( x : Int, y :Int): Int{
+fun sum1( x : Int, y :Int): Int{
     return x+y
 }
 
