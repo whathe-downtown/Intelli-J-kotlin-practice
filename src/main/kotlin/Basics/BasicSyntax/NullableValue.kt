@@ -1,4 +1,4 @@
-package BasicSyntax
+package Basics.BasicSyntax
 
 import java.lang.Integer.parseInt
 

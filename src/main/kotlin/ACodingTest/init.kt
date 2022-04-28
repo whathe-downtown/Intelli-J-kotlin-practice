@@ -1,30 +1,11 @@
 package ACodingTest
 
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.util.*
+import java.util.Scanner
+
 
 fun main() = with(Scanner(System.`in`)){
-    print(nextDouble()/ nextDouble())
+    val year = nextInt()
 
-
-}
-
-// 덧셈
-fun main1() = with(Scanner(System.`in`)){
-    val a = nextInt()
-    val b= nextInt()
-
-    println(a+b)
-    println(a-b)
-    println(a*b)
-    println(a % b)
-
-//    <improve version>
-
-//    val br = BufferedReader(InputStreamReader(System.`in`))
-//    val token = StringTokenizer(br.readLine())
-//    println(Integer.parseInt(token.nextToken()) + Integer.parseInt(token.nextToken()))
-//
-
+    if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))  print("1")
+    else println("0")
 }

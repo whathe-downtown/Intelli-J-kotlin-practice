@@ -14,4 +14,5 @@ fun greetMammal(mammal: Mammal): String {
 
 fun main() {
     println(greetMammal(Cat("Snowy")))
+    println(greetMammal(Human("ck", "programmer")))
 }

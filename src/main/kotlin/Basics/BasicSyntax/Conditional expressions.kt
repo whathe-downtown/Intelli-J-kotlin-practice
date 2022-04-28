@@ -1,4 +1,4 @@
-package BasicSyntax
+package Basics.BasicSyntax
 
 fun maxOf(a: Int, b:Int): Int{
     if (a>b){

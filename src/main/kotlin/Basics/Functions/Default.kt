@@ -1,4 +1,4 @@
-package Functions
+package Basics.Functions
 
 fun printMessage(message : String): Unit{
     println(message)

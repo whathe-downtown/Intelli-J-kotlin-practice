@@ -1,4 +1,4 @@
-package Functions
+package Basics.Functions
 
 
 
@@ -19,7 +19,7 @@ fun main(){
 }
 class Person(val name: String){
     val likedPeople = mutableListOf<Person>()
-    infix fun likes(other:Person) {likedPeople.add(other)}
+    infix fun likes(other: Person) {likedPeople.add(other)}
 }
 
 fun printALl(vararg messages: String){

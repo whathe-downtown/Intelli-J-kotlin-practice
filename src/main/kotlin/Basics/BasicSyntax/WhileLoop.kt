@@ -1,4 +1,4 @@
-package BasicSyntax
+package Basics.BasicSyntax
 
 fun main() {
     println(describe(1))

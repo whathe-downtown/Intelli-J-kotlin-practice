@@ -1,4 +1,4 @@
-package BasicSyntax
+package Basics.BasicSyntax
 
 
 private val x = 10
@@ -6,7 +6,7 @@ private val y = 10
 
 
 fun main(){
-    if (x in 1..y+1){
+    if (x in 1..y +1){
         println("fits in range")
     }
     checkif()

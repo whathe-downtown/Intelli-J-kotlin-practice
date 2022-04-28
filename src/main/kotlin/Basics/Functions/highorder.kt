@@ -1,4 +1,4 @@
-package Functions
+package Basics.Functions
 
 fun calculate(x: Int, y: Int, operation: (Int, Int) -> Int): Int {  // 1
     return operation(x, y)                                          // 2
@@ -10,6 +10,7 @@ fun main() {
     val sumResult = calculate(4, 5, ::sum)                          // 4
     val mulResult = calculate(4, 5) { a, b -> a * b }               // 5
     println("sumResult $sumResult, mulResult $mulResult")
+
 
     val func = operation()
     println(func(2))
