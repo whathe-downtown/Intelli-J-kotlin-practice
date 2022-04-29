@@ -1,11 +1,28 @@
 package ACodingTest
 
-import java.util.Scanner
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.util.StringTokenizer
 
 
-fun main() = with(Scanner(System.`in`)){
-    val year = nextInt()
+fun main() = with(System.`in`.bufferedReader()){
 
-    if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))  print("1")
-    else println("0")
+    val str = readLine()
+    val token = StringTokenizer(str," ")
+
+    var H =  token.nextToken().toInt()
+    var M = token.nextToken().toInt()
+
+    if (M <45){
+        H--
+        M = 60 - (45-M)
+
+        if(H < 1){
+            H = 23
+        }
+        println("${H} ${M}")
+
+    } else{
+        println("${H} ${M-45}")
+    }
 }
